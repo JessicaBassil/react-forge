@@ -1,0 +1,48 @@
+{
+	"name": "react-forge",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.js",
+	"description": "A modern CLI tool for scaffolding production-ready React applications.",
+	"scripts": {
+		"test": "echo \"No tests specified yet\"",
+		"dev": "tsx bin/index.ts",
+		"build": "tsc",
+		"lint": "biome check .",
+		"typecheck": "tsc --noEmit",
+		"format": "biome format . --write",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.{ts,js,json,md,yml,yaml}": [
+			"biome check --write"
+		]
+	},
+	"bin": {
+		"react-forge": "./dist/bin/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JessicaBassil/react-forge.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JessicaBassil/react-forge/issues"
+	},
+	"homepage": "https://github.com/JessicaBassil/react-forge#readme",
+	"dependencies": {
+		"@clack/prompts": "^1.3.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.15",
+		"@commitlint/cli": "^21.0.0",
+		"@commitlint/config-conventional": "^21.0.0",
+		"@types/node": "^25.6.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.4.0",
+		"tsx": "^4.21.0",
+		"typescript": "^6.0.3"
+	}
+}
