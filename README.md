@@ -1,4 +1,4 @@
-# React Forge
+# React Forged
 
 A modern CLI tool for scaffolding production-ready React applications.
 
@@ -34,13 +34,13 @@ Compiled output is generated in `dist/`.
 
 Package metadata includes:
 
-- CLI binary: `react-forge`
+- CLI binary: `react-forged`
 - published files: `dist`, `README.md`, `LICENSE`
 
 ## Usage (after publishing or linking)
 
 ```bash
-react-forge
+react-forged
 ```
 
 Then follow the prompts to choose a project name and template.
