@@ -5,7 +5,7 @@ import {
 	SKIP_FILES,
 	TEXT_EXTENSIONS,
 	TEXT_FILE_NAMES,
-} from "@/constants/files.js";
+} from "../constants/files.js";
 
 function isTextFile(filePath: string): boolean {
 	const base = path.basename(filePath);

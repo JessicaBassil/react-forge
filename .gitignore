@@ -21,3 +21,6 @@ coverage
 # temporary files
 .tmp
 .temp
+
+# packed npm archives
+*.tgz

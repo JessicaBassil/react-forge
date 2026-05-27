@@ -1,6 +1,6 @@
 {
 	"name": "react-forge",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"type": "module",
 	"main": "index.js",
 	"description": "A modern CLI tool for scaffolding production-ready React applications.",
@@ -16,6 +16,20 @@
 		"version-packages": "changeset version",
 		"publish-packages": "changeset publish"
 	},
+	"files": [
+		"dist",
+		"templates",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"react",
+		"vite",
+		"scaffold",
+		"cli",
+		"template",
+		"typescript"
+	],
 	"lint-staged": {
 		"*.{ts,js,json,md,yml,yaml}": [
 			"biome check --write"
@@ -28,9 +42,11 @@
 		"type": "git",
 		"url": "git+https://github.com/JessicaBassil/react-forge.git"
 	},
-	"keywords": [],
 	"author": "",
-	"license": "ISC",
+	"license": "MIT",
+	"engines": {
+		"node": ">=20"
+	},
 	"bugs": {
 		"url": "https://github.com/JessicaBassil/react-forge/issues"
 	},

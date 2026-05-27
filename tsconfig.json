@@ -21,10 +21,7 @@
 		"isolatedModules": true,
 		"noUncheckedSideEffectImports": true,
 		"moduleDetection": "force",
-		"skipLibCheck": true,
-		"paths": {
-			"@/*": ["./src/*"]
-		}
+		"skipLibCheck": true
 	},
 	"include": ["bin", "src"]
 }

@@ -4,7 +4,7 @@
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": false
 	},
 
 	"css": {
@@ -14,7 +14,8 @@
 	},
 
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": false,
+		"includes": ["src/**", "*.json", "*.ts", "*.tsx", "!dist", "!node_modules"]
 	},
 
 	"formatter": {

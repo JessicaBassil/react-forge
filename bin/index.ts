@@ -1,6 +1,8 @@
-import createProject from "@/utils/create-project.js";
-import promptProjectName from "@/utils/prompt-project-name.js";
-import promptTemplate from "@/utils/prompt-template.js";
+#!/usr/bin/env node
+
+import createProject from "../src/utils/create-project.js";
+import promptProjectName from "../src/utils/prompt-project-name.js";
+import promptTemplate from "../src/utils/prompt-template.js";
 
 async function main() {
 	try {

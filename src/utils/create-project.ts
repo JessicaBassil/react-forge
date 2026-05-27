@@ -1,4 +1,5 @@
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import fs from "fs-extra";
 import pc from "picocolors";
 import replacePlaceholdersInDir from "./replace-placeholders.js";
@@ -18,9 +19,12 @@ function projectNameToTitle(name: string): string {
 async function createProject({ projectName = "", template = "" }) {
 	const targetDir = path.resolve(String(projectName));
 
+	const __filename = fileURLToPath(import.meta.url);
+	const __dirname = path.dirname(__filename);
+
 	const templateDir = path.resolve(
-		process.cwd(),
-		"templates",
+		__dirname,
+		"../../../templates",
 		String(template),
 	);
 
